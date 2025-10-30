@@ -9,6 +9,7 @@ phases:
       - echo Build phase complete. No compilation needed for HTML.
   post_build:
     commands:
+      - chmod +x restart_httpd.sh
       - echo Build completed successfully.
 
 artifacts:
